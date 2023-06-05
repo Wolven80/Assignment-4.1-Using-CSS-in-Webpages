@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="code.js"></script>
+</head>
+<body>
+    <!--
+        The script tacs are where the JavaScript code goes.
+    -->
+
+    Pet's Name: <div id="petsName"></div>
+
+    <script>
+        // single line comment
+        /* * * * * *
+            this is a multi line comment
+        * * * * * */
+        //we want to know the user's pet's name
+        //declare a variable called pet-name to hold the pet's name
+        var pet_name = "";
+       
+        //we are going to assign the value of Fluffy to the pet_name variable
+        pet_name = "Fluffy";
+
+        /*we are calling the built in JavaScript alert function 
+        it is going to display text that says what the name of the pet is
+        */
+        /*alert("The pet's name is: " + pet_name);
+
+        //thsi variable is camel case
+        var petName = "";
+
+        //document.write(pet_name);
+        console.log(pet_name);
+
+        document.getElementById("petsName").innerHTML = pet_name;
+        */
+        //create a function that runs a calculator
+        function runCalc(){
+            //set up 2 variables that will hold user inputs
+            var num1 = 0;
+            var num2 = 0;
+
+            //do loops run at least 1 time, and can runa an
+            //infinite amount of times. Make sure to include code that will exit the loop
+            //in this case, the loop will run as long as num1 is not a number
+            //(i.e., a string) or num1 is 0. Once num1 is a number not equal to 0
+            //we will exit the loop
+            do{
+                num1 = promt("Please enter number 1: ");
+            }while (isNaN(num1) || num1 == 0 );
+
+            //do loops run at least 2 time, and can runa an
+            //infinite amount of times. Make sure to include code that will exit the loop
+            //in this case, the loop will run as long as num1 is not a number
+            //(i.e., a string) or num2 is 0. Once num1 is a number not equal to 0
+            //we will exit the loop
+        do{
+                num2 = promt("Please enter number 2: ");
+            }while (isNaN(num2) || num2 == 0 );
+
+            //add num1 and num2 to the total variable
+            var total = parseInt(num1) + parseInt(num2);
+            //multiply num1 and num2 and assign the balue to the product variable
+            var product = parseInt(num1) * parseInt(num2);
+
+            //display the description of the addition in an alert
+            alert("The total of " + num1 + " plus " + num2 + " is " + total);
+            //display the multiplication info in an alert
+            alert("The product of " + num1 + " times " + num2 + " is " + product);
+            
+        }
+
+        //this code calls (runs) the runCalc function
+        runCalc();
+    </script>
+
+    
+
+</body>
+</html>
